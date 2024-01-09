@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semester Subjects</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Basic CSS for layout */
+    /* ... (previous CSS remains unchanged) ... */
+/* Basic styling */
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #009688;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.semester {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.semester:hover {
+  background-color: #e0e0e0;
+}
+
+.semester h2 {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subject-list {
+  display: none;
+  list-style: none;
+  padding-left: 20px;
+}
+
+.subject-list li {
+  margin-bottom: 8px;
+}
+
+.subject-list a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.subject-list a:hover {
+  color: #009688;
+}
+
+.subject-list a i {
+  margin-left: 5px;
+}
+
+.show {
+  display: block;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>BeTECHify</h1>
+    <p>Welcome to BeTECHify</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h2>Study Material</h2>
+  
+    <section>
+      <h3 class="semester" onclick="toggleSubjects('semester1')">Semester 1</i></h3>
+      <ul id="semester1" class="subject-list">
+        <li><a href="https://drive.google.com/drive/folders/12oFKAsgSyOE1mVENaBod60jk0M1MkU29?usp=drive_link" target="_blank">ENGINEERING MATHEMATICS-I</a></li>
+        <li><a href="https://drive.google.com/drive/folders/160ZGfbKNAHit6GP3TENNTuOHIh1aZCRX?usp=drive_link" target="_blank">ENGINEERING PHYSICS</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1RASuL30t1kot8ozQODDpglH7g4S3zolu?usp=drive_link" target="_blank">FUNDAMENTAL OF PROGRAMMING</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1PgnB-Wx4sJ7jVsZkStxgbq44paF6kaga?usp=drive_link" target="_blank">ELEMENTS OF CIVIL ENGINEERING</a></li>
+        <li><a href="https://drive.google.com/drive/folders/160ZGfbKNAHit6GP3TENNTuOHIh1aZCRX?usp=drive_link" target="_blank">ENGINEERING GRAPHICS</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1M9EcoKcNN9tsbPDOXvk3SYTCN0_df8ro?usp=drive_link" target="_blank">ENVIRONMENTAL SCIENCE</a></li>
+
+      </ul>
+    </section>
+  
+    <section>
+      <h3 class="semester" onclick="toggleSubjects('semester2')">Semester 2</h3>
+      <ul id="semester2" class="subject-list">
+        <li><a href="link_to_subject3_material">ENGINEERING MATHEMATICS-II</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1mZROCy6TMBYPrG7UShCXzo59fx3QI9eB?usp=drive_link">BASIC OF ELECTRICAL AND ELECTRONICS ENGINEERING</a></li>
+        <li><a href="link_to_subject3_material">OBJECT ORIENTED PROGRAMMING USING C++</a></li>
+        <li><a href="link_to_subject3_material">FUNDAMENTAL OF MECHANICAL ENGINEERING</a></li> 
+        <li><a href="link_to_subject4_material">WORKSHOP</a></li>
+        <li><a href="link_to_subject3_material">BUSINESS COMMUNICATION AND SKILLS</a></li>
+        <li><a href="link_to_subject3_material">INTRODUCTION TO INFORMATION & COMMUNICATION TECHNOLOGY</a></li>
+
+      </ul>
+    </section>
+
+    <section>
+        <h3 class="semester" onclick="toggleSubjects('semester3')">Semester 3</h3>
+        <ul id="semester3" class="subject-list">
+          <li><a href="link_to_subject1_material">DISCRETE MATHEMATICS</a></li>
+          <li><a href="link_to_subject2_material">DATA STRUCTURES & ALGORITHM</a></li>
+          <li><a href="link_to_subject2_material">DIGITAL ELECTRONICS</a></li>
+          <li><a href="link_to_subject2_material">IT WORKSHOP</a></li>
+          <li><a href="link_to_subject2_material">DATABASE MANAGEMENT SYSTEMS</a></li>
+
+        </ul>
+      </section>
+
+      <section>
+        <h3 class="semester" onclick="toggleSubjects('semester4')">Semester 4</h3>
+        <ul id="semester4" class="subject-list">
+          <li><a href="link_to_subject1_material">PRINCIPLES OF MANAGEMENT</a></li>
+          <li><a href="link_to_subject2_material">PROBABILITY, STATISTICS AND NUMERICAL METHODS</a></li>
+          <li><a href="link_to_subject2_material">COMPUTER ORGANIZATION & ARCHITECTURE</a></li>
+          <li><a href="link_to_subject2_material">OPERATING SYSTEMS</a></li>
+          <li><a href="link_to_subject2_material">OBJECT ORIENTED PROGRAMMING USING JAVA</a></li>
+
+        </ul>
+      </section>
+
+      <section>
+        <h3 class="semester" onclick="toggleSubjects('semester5')">Semester 5</h3>
+        <ul id="semester5" class="subject-list">
+          <li><a href="link_to_subject1_material">SOFTWARE ENGINEERING</a></li>
+          <li><a href="link_to_subject2_material">MICROPROCESSOR ARCHITECTURE AND PROGRAMMING</a></li>
+          <li><a href="link_to_subject2_material">THEORY OF COMPUTATION</a></li>
+          <li><a href="link_to_subject2_material">DESIGN & ANALYSIS OF ALGORITHM</a></li>
+          <li><a href="link_to_subject2_material">COMPUTER NETWORKS</a></li>
+          <li><a href="link_to_subject2_material">ELECTIVE-I</a></li>
+
+        </ul>
+      </section>
+ 
+      <section>
+        <h3 class="semester" onclick="toggleSubjects('semester6')">Semester 6</h3>
+        <ul id="semester6" class="subject-list">
+          <li><a href="link_to_subject1_material">ARTIFICIAL INTELLIGENCE</a></li>
+          <li><a href="link_to_subject2_material">PYTHON PROGRAMMING</a></li>
+          <li><a href="link_to_subject2_material">CRYPTOGRAPHY AND NETWORK SECURITY</a></li>
+          <li><a href="link_to_subject2_material">ELECTIVE-II</a></li>
+          <li><a href="link_to_subject2_material">ELECTIVE-III</a></li>
+
+        </ul>
+      </section>
+ 
+      <section>
+        <h3 class="semester" onclick="toggleSubjects('semester7')">Semester 7</h3>
+        <ul id="semester7" class="subject-list">
+          <li><a href="link_to_subject1_material">COMPILER DESIGN</a></li>
+          <li><a href="link_to_subject2_material">CYBER SECURITY</a></li>
+          <li><a href="link_to_subject2_material">ELECTIVE-IV</a></li>
+          <li><a href="link_to_subject2_material">ELECTIVE-V</a></li>
+
+        </ul>
+      </section>
+
+      <section>
+        <h3 class="semester" onclick="toggleSubjects('semester8')">Semester 8</h3>
+        <ul id="semester8" class="subject-list">
+          <li><a href="link_to_subject1_material">NEXT GENERATION NETWORKS</a></li>
+          <li><a href="link_to_subject2_material">BIG DATA ANALYTICS</a></li>
+          <li><a href="link_to_subject2_material">ELECTIVE-VI</a></li>
+
+        </ul>
+      </section>
+  
+    <!-- Add sections for Semester 3 to 8 similarly -->
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2024 BeTECHify.com</p>
+  </footer>
+
+  <script>
+    function toggleSubjects(semesterId) {
+      var subjects = document.getElementById(semesterId);
+      subjects.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
